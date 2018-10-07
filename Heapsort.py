@@ -1,7 +1,7 @@
 A = [1,4,10,14,7,9,3,2,8,16]
-def Max_Heapify(A,i):
-    l = 2*i+1
-    r = 2*(i+1)
+def Max_Heapify(A,i):   #维护最大堆
+    l = 2*i+1           #左节点
+    r = 2*(i+1)         #右节点
     if l<= len(A)-1 and A[l] > A[i]:
         largest = l
     else:
