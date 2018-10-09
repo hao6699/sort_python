@@ -18,7 +18,7 @@ def Build_Max_Heap(A):
 def Heapsort(A):
     Build_Max_Heap(A)
     B = []
-    for i in range(len(A)-1,-1,-1):
+    for i in range(len(A)):
         B.append(A[0])
         A[0],A[-1] = A[-1],A[0]
         A.pop()
